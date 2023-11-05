@@ -27,6 +27,7 @@ line-height: 60px;
 letter-spacing: 0.06em;
 text-align: center;
 color: #FFFFFF;
+background-color:#2F303A;
 }
 .section-hero-btn{
     font-family: Roboto;
@@ -36,10 +37,10 @@ line-height: 30px;
 letter-spacing: 0.06em;
 text-align: center;
 color: #FFFFFF;
-background-color: #2196F3;
 width: 216px;
 height: 50px;
 border-radius: 4px;
+background-color: #2F303A;
 }
 .features-list-title{
     font-family: Roboto;
@@ -201,5 +202,97 @@ footer{
     max-width: 1200px;
     margin: 0 auto;
     padding-left: 15xp;
-    padding-right: 15px;
+    padding-right: 15px;]
+    background-color: #2F303A;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background: #2F303A;
+    text-align: center;
+}
+
+
+.section-hero-title {
+    font-size: 2rem;
+}
+
+.section-hero-btn {
+    background: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.section-features {
+    background: #f9f9f9;
+    padding: 40px 0;
+}
+
+.features-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.features-list-item {
+    flex: 0 0 calc(30% - 20px);
+    text-align: center;
+    margin: 10px;
+}
+
+.section-work {
+    background: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.section-work-title {
+    font-size: 2rem;
+}
+
+.work-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.work-list-item {
+    flex: 0 0 calc(30% - 20px);
+    margin: 10px;
+}
+
+.section-team {
+    background: #f9f9f9;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.section-team-title {
+    font-size: 2rem;
+}
+
+.team-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-list-item {
+    flex: 0 0 calc(30% - 20px);
+    text-align: center;
+    margin: 10px;
 }
