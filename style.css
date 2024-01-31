@@ -3,11 +3,31 @@
     --secondary-color: #6c757d;
     --background-color: #f8f9fa;
 }
+.nav-list-link:hover, .contacts-list-link:hover{
+    color: var(--primary-color);
+}
 .nav-list{
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 50px;
+}
+
+.portofolio-section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+    
+}
+
+.filters-list{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+body{
+    font-family: Roboto;
+    font-size: 14px;
 }
 .nav-list-link{
     font-family: Roboto;
@@ -29,9 +49,37 @@ color: #212121;
 }
 header{
     padding-top: 32px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 10px;
 }
 .header-logo{
     color: #000000;
+    font-family: Raleway;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700px;
+    line-height: normal;
+    letter-spacing: ;
+}
+
+.filter-list-item{
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500px;
+    line-height: 26px;
+    letter-spacing: 0.48px;
+
+}
+
+.portfolio-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .contacts-list-link{
@@ -40,7 +88,9 @@ font-size: 14px;
 font-weight: 500;
 line-height: 16px;
 letter-spacing: 0.02em;
-color: #757575;
+color: var(--secondary-color);
+line-height: normal;
+font-style: normal;
 }
 .section-hero-title{
     font-size: 44px;
@@ -51,8 +101,16 @@ color: #757575;
     max-width: 696px;
     margin: 0 auto;
     color: #FFFFFF;
-
 }
+.address-list-link{
+    color: ;
+}
+
+.address-list-link{
+    color: #FFFFFF;
+}
+
+
 .section-hero-btn{
     font-family: Roboto;
 font-size: 16px;
@@ -75,7 +133,51 @@ line-height: 16px;
 letter-spacing: 0.03em;
 text-align: left;
 color: #212121;
+margin-top: 30px;
+margin-bottom: 10px;
 }
+
+.features-list-item:nth-child(1)::before{
+    content: "";
+    width: 270px;
+    height: 120px;
+    background-image: url(./Group4.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.features-list-item:nth-child(2)::before{
+    content: "";
+    width: 270px;
+    height: 120px;
+    background-image: url(./Rectangle\ 2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.features-list-item:nth-child(3)::before{
+    content: "";
+    width: 270px;
+    height: 120px;
+    background-image: url(./Group\ 3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.features-list-item:nth-child(4)::before{
+    content: "";
+    width: 270px;
+    height: 120px;
+    background-image: url(./Group\ 1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+
 .features-list{
     display: flex;
     gap: 30px;
@@ -95,6 +197,7 @@ line-height: 42px;
 letter-spacing: 0.03em;
 text-align: center;
 color: #212121;
+margin-bottom: 50px;
 }
 .section-team-title{
     font-family: Roboto;
@@ -104,7 +207,10 @@ line-height: 42px;
 letter-spacing: 0.03em;
 text-align: center;
 color: #212121;
+margin-bottom: 50px;
 }
+
+
 .team-list-name{
     font-family: Roboto;
     font-size: 16px;
@@ -112,7 +218,8 @@ color: #212121;
     line-height: 19px;
     letter-spacing: 0.03em;
     text-align: center;
-color: #212121;    
+    color: #212121;    
+    margin-bottom: 10px;
 }
 .team-list-role{
     font-family: Roboto;
@@ -122,6 +229,7 @@ color: #212121;
     letter-spacing: 0.03em;
     text-align: center;
 color: #757575;    
+margin-top: 10px;
 }
 .address-list-item{
     font-family: Roboto;
@@ -136,7 +244,7 @@ color: #FFFFFF;
     font-family: Raleway;
     font-size: 26px;
     font-weight: 700;
-    line-height: 31px;
+    line-height: normal;
     letter-spacing: 0.03em;
     text-align: left;
     color: #2196F3;
@@ -165,6 +273,18 @@ text-align: left;
 color: #000000;
 color: #2196F3;
 }
+
+.filters-list-btn{
+    margin-bottom: 50px;
+    width: 130px;
+    height: 38px;
+    top: 174px;
+    left: 957px;
+    border-radius: 4px;
+
+
+}
+
 .nav-link{
     font-family: Roboto;
     font-size: 14px;
@@ -193,7 +313,9 @@ color:#757575;
 color: #212121;    
 }
 .item-image{
+ margin-bottom: 20px;
 }
+
 .item-title{
     font-family: Roboto;
     font-size: 18px;
@@ -237,11 +359,17 @@ footer{
     height: 70vh;
     background: #2F303A;
     text-align: center;
+    background-image: url(Img\ \(2\).png);
 }
 
 
 .section-hero-title {
     font-size: 2rem;
+    width: 696px;
+    height: 120px;
+    top: 280px;
+    left: 452px;
+    max-width: 500px;
 }
 
 .section-hero-btn {
@@ -288,6 +416,7 @@ footer{
 .section-team-title {
     font-size: 2rem;
 }
+
 
 .team-list {
     list-style: none;
